@@ -1,0 +1,57 @@
+/* Ajoutez vos styles CSS personnalisés ici */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Force le corps à occuper au moins 100% de la hauteur de la fenêtre */
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 300px; /* Largeur de la barre latérale */
+    height: 597px; /* Longeur de la barre latérale */
+    background-color: #f2f2f2; /* Couleur de fond gris */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Supprime les soulignements des liens */
+    color: #333; /* Couleur du texte */
+    display: block; /* Affiche les liens en tant que blocs */
+    padding: 5px 10px; /* Espacement intérieur pour le lien */
+    border-radius: 3px; /* Coins arrondis pour les liens */
+    transition: background-color 0.3s; /* Transition en douceur pour le changement de couleur de fond */
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd; /* Couleur de fond gris clair au survol */
+}
+
+.content {
+    flex: 1; /* Faire en sorte que le contenu remplisse l'espace restant */
+    padding: 20px; /* Espacement intérieur */
+}
+
+footer {
+    margin-top: auto; /* Colle le pied de page en bas de la fenêtre */
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 10px 20px; /* Espacement intérieur du pied de page */
+}
