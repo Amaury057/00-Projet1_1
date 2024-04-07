@@ -20,7 +20,7 @@
                 </div>
                 <div class="content">
                     <main>
-                        <p>Contenu de la page "Compte"...</p>
+                        <p>Contenu de la page "Compte"..</p>
                     </main>
                 </div>
             </div>    
