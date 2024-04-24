@@ -35,7 +35,6 @@
                         <span>
                             Pic Passion
                         </span>
-                        
                     </a>
                     <a class="navbar-brand mr-5">
                         <span class="page-title">
@@ -49,7 +48,7 @@
                         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                             <ul class="navbar-nav  ">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="addequip.php">Ajouté un équipement</a>
+                                    <a id="ajoutEquipement" class="nav-link" href="#">Ajouté un équipement</a>
                                 </li>
                                 <!-- Les autres liens de la barre de navigation -->
                             </ul>
@@ -76,6 +75,7 @@
     <!-- Scripts JavaScript -->
     <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/form.js"></script>
 </body>
 
 </html>

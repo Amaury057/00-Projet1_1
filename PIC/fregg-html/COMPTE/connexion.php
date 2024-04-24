@@ -36,18 +36,18 @@
                 </h2>
             </div>
         </div>
-      <div class="container contact_bg layout_padding2-top">
+      <div class="container contact_bg layout_padding2-top" style="padding-left: 25%; padding-right:25%; width:50%">
         <div class="row">
           <div class="col-md-6">
-            <div class="contact_form ">
+            <div class="contact_form">
               <form action="FormCon.php" method="POST">
                 <h1>Connexion</h1>
-                <input type="email" id="mail" name="mail" required placeholder="mail ">
+                <input type="email" id="mail" name="mail" required placeholder="Mail ">
                 <input type="password" id="mdp" name="mdp" required placeholder="Mot de Passe ">
                 <button type="submit">Connexion</button>
-                </form>        
+              </form>        
             </div>    
-            <div class="contact_form ">
+            <div class="contact_form">
               <form action="FormInsc.php" method="POST"> 
                 <h1>Inscription</h1>
                 <input type="text" id="nom" name="nom" required placeholder="Nom ">
