@@ -13,11 +13,14 @@
             <div class="container">
                 <div class="sidebar">
                     <ul>
-                        <li><a href="home.php"><h1 style="text-align: center;">Pic Passion</hi></a></li><br>
-                        <li><a href="cours.php">Cours</a></li>
-                        <li><a href="spots.php">Spots</a></li>
+                        <li><a href="home.php"><h1 style="text-align: center;">Pic Passion</hi></a></li><br>                    
+                        <li><a href="../SPOTS/spots.php">Les Spots</a></li>
+                        <li><a href="../INVENTAIRE/inv.php">Inventaire</a></li>
                         <li><a href="../COMPTE/compte.php">Compte</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="../CONTACTE/contacte.php">Contact </a></li>
+                        <li><form action="../COMPTE/connexion.php">
+                        <a href="../COMPTE/deco.php" id="deco">Déconnexion</a><br><br></form>
+                        </li>
                     </ul>
                 </div>
                 <div class="content">
@@ -26,6 +29,12 @@
                         <p>Découvrez notre site dédié à l'escalade, où vous trouverez des informations sur les cours, les spots et bien plus encore !</p>
                         <p>Que vous soyez débutant ou expérimenté, vous trouverez votre bonheur sur Pic Passion.</p>
                     </section>
+                    <?php
+                        session_start();
+                        require_once("C:/wamp64/www/00-Projet1_1/WEBPROJECT/COMPTE/db.php");
+
+                        echo 'Bienvenue ' . $_SESSION["prenom"];
+                    ?>
                     <section>
                         <h2>Dernières actualités</h2>
                         <ul>
