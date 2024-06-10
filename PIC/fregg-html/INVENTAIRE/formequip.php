@@ -13,33 +13,27 @@ function isPostRequest()
 if (isPostRequest() && isset($_POST['types'])) {
     $marque = $_POST["marques"];
     $types = $_POST["types"];
-    $id_utilisateur = $_SESSION ["id_utilisateur"];
+    $id_utilisateur = $_SESSION["id_utilisateur"];
     $tailles_cordes = isset($_POST["tailles_cordes"]) ? $_POST["tailles_cordes"] : null;
     $diametre_cordes = isset($_POST["diametre_cordes"]) ? $_POST["diametre_cordes"] : null;
-    $tailles_chaussons = isset($_POST["tailles_chaussons"]) ? $_POST["tailles_chaussons"] : null;
+    $pointure = isset($_POST["pointure"]) ? $_POST["pointure"] : null;
+    $prix = isset($_POST["prix"]) ? $_POST["prix"] : null;
 
-    $sql = "INSERT INTO equipements (marque, types, tailles_cordes, tailles_chaussons, id_utilisateur, diametre_cordes) 
-            VALUES (?, ?, ?, ?, ?, ?)";
-
-    $stmt = $connexion->prepare($sql);
-    echo var_dump($tailles_chaussons) ;
-    echo var_dump($tailles_cordes) ;
-    echo var_dump($diametre_cordes) ;
+    if ($types === "cordes") {
+        $sql = "INSERT INTO cordes (marque, tailles_cordes, diametre_cordes, prix, id_utilisateur) 
+                VALUES (?, ?, ?, ?, ?)";
+        $stmt = $connexion->prepare($sql);
+        $stmt->bind_param("sssdi", $marque, $tailles_cordes, $diametre_cordes, $prix, $id_utilisateur);
+    } elseif ($types === "chaussons") {
+        $sql = "INSERT INTO chaussons (marque, pointure, prix, id_utilisateur) 
+                VALUES (?, ?, ?, ?)";
+        $stmt = $connexion->prepare($sql);
+        $stmt->bind_param("ssdi", $marque, $pointure, $prix, $id_utilisateur);
+    }
 
     if ($stmt) {
-
-        $tailles_chaussons_valide = !empty($tailles_chaussons) ? $tailles_chaussons : null;
-
-        $tailles_cordes_valide = !empty($tailles_cordes) ? $tailles_cordes : null;
-
-        $diametre_cordes_valide = !empty($diametre_cordes) ? $diametre_cordes : null;
-
-
-        $stmt->bind_param("ssssss", $marque, $types, $tailles_cordes_valide, $tailles_chaussons_valide , $id_utilisateur, $diametre_cordes_valide);
-
         if ($stmt->execute()) {
-            echo "<div class='retour'>equipement ajouté avec succès !</div>";
-
+            echo "<div class='retour'>Équipement ajouté avec succès !</div>";
             header('location: equipement.php');
             exit;
         } else {

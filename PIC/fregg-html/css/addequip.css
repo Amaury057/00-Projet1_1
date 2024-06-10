@@ -1,0 +1,60 @@
+.content {
+
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+
+    
+}
+
+.blur{
+    filter: blur(5px);
+}
+
+.retour-btn {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.retour-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-table tr:hover {
+    background-color: #ddd;
+}
+
+.custom-table th, .custom-table td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}

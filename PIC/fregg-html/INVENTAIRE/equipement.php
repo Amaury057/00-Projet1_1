@@ -11,15 +11,17 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/addequip.css">
+
+    
     <style>
-        /* Style pour l'espace entre les éléments */
         .navbar-brand {
             display: flex;
             align-items: center;
         }
 
         .page-title {
-            margin-left: 275px; /* Ajoutez de la marge à gauche */
+            margin-left: 275px; 
         }
     </style>
 </head>
@@ -31,7 +33,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
                     <a class="navbar-brand mr-5" href="../index.html">
-                        <img src="images/logo.png" alt="">
+                        <!--<img src="images/logo.png" alt="">-->
                         <span>
                             Pic Passion
                         </span>
@@ -48,7 +50,7 @@
                         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                             <ul class="navbar-nav  ">
                                 <li class="nav-item">
-                                    <a id="ajoutEquipement" class="nav-link" href="#">Ajouté un équipement</a>
+                                    <a id="ajoutEquipement" class="nav-link" href="#">Ajouter un équipement</a>
                                 </li>
                                 <!-- Les autres liens de la barre de navigation -->
                             </ul>
@@ -61,14 +63,19 @@
             </div>
         </header>
 
-        <!-- Barre de navigation -->
-
-        <header class="header_section">
-            <!-- Insérer le contenu de la barre de navigation de votre page existante -->
-        </header>
         <!-- Contenu de la page d'inventaire -->
         <section class="inventaire_section layout_padding">
-            <!-- Insérez le contenu spécifique à la page d'inventaire ici -->
+            <div class="container">
+                <div class="row">
+                    <div class="custom-table">
+                        <!-- Code PHP pour récupérer et afficher les équipements -->
+                        <?php include 'table.php'; ?>
+                        
+
+
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -76,6 +83,7 @@
     <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/form.js"></script>
+    <script type="text/javascript" src="../js/table.js"></script>
 </body>
 
 </html>

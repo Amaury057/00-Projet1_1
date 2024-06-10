@@ -46,6 +46,21 @@ function SupppCordes() {
 
 }
 
+function SuppPrix() {
+    var selectBox = document.getElementById("types");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    var prixInput = document.getElementById("prix");
+    var OptionPrixSupp = document.getElementById("OptionPrixSupp");
+
+    if (selectedValue === "chaussons" || selectedValue === "cordes") {
+        prixInput.style.display = "block";
+        OptionPrixSupp.style.display = "block";
+    } else {
+        prixInput.style.display = "none";
+        OptionPrixSupp.style.display = "none";
+    }
+}
+
 // Récupérer le lien "Ajouté un équipement" par son ID
 var ajoutEquipementLink = document.getElementById("ajoutEquipement");
 

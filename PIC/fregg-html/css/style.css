@@ -50,6 +50,7 @@ body {
 
 .hero_area_1 {
   height: 100vh;
+  filter: none;
   background-image: url(../images/fondmontagne.jpg);
   background-size: cover;
 }
