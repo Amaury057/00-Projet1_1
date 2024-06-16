@@ -3,25 +3,11 @@ $(document).on("click", ".modifier-btn", function() {
     var equipementType = $(this).data("type");
     $.ajax({
         url: "modif.php",
-        method: "POST",
+        method: "GET",
         data: { id: equipementId, type: equipementType },
         success: function(response) {
             $("#modal-body").html(response);
             $("#myModal").modal("show");
-        }
-    });
-});
-
-$(document).on("click", ".supprimer-btn", function() {
-    var equipementId = $(this).data("id");
-    var equipementType = $(this).data("type");
-    $.ajax({
-        url: "suppr.php",
-        method: "POST",
-        data: { id: equipementId, type: equipementType },
-        success: function(response) {
-            alert(response);
-            location.reload();
         }
     });
 });
@@ -35,6 +21,20 @@ $(document).on("submit", "#modifForm", function(event) {
         data: formData,
         success: function(response) {
             $("#myModal").modal("hide");
+            location.reload();
+        }
+    });
+});
+
+$(document).on("click", ".supprimer-btn", function() {
+    var equipementId = $(this).data("id");
+    var equipementType = $(this).data("type");
+    $.ajax({
+        url: "suppr.php",
+        method: "POST",
+        data: { id: equipementId, type: equipementType },
+        success: function(response) {
+            alert(response);
             location.reload();
         }
     });

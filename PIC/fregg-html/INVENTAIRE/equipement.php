@@ -13,7 +13,6 @@
     <link href="../css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="../CSS/addequip.css">
 
-    
     <style>
         .navbar-brand {
             display: flex;
@@ -21,7 +20,7 @@
         }
 
         .page-title {
-            margin-left: 275px; 
+            margin-left: 275px;
         }
     </style>
 </head>
@@ -70,13 +69,27 @@
                     <div class="custom-table">
                         <!-- Code PHP pour récupérer et afficher les équipements -->
                         <?php include 'table.php'; ?>
-                        
-
-
                     </div>
                 </div>
             </div>
         </section>
+    </div>
+
+    <!-- Modal pour la modification d'équipement -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Modifier l'équipement</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Contenu du formulaire de modification chargé dynamiquement -->
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts JavaScript -->
@@ -84,6 +97,7 @@
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/form.js"></script>
     <script type="text/javascript" src="../js/table.js"></script>
+
 </body>
 
 </html>
