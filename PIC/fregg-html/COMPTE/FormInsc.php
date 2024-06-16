@@ -3,6 +3,7 @@ session_start();
 require_once('db.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $user = $_POST["user"];
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $mail = $_POST["mail"];

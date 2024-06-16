@@ -43,4 +43,5 @@ if ($resultat_equipements->num_rows > 0) {
 $connexion->close();
 ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../js/table.js"></script>
