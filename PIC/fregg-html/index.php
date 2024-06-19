@@ -64,9 +64,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="COMPTE/compte.php">Compte</a>
                 </li>
-                <li class="nav-item">
+                <!--<li class="nav-item">
                   <a class="nav-link" href="COMPTE/connexion.php">Connexion</a>
-                </li>
+                </li>-->
                 <?php
                 if (isset($_SESSION['id_utilisateur'])) {
                   echo '<li class="nav-item">
