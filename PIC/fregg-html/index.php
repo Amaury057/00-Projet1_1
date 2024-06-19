@@ -61,9 +61,10 @@
                 <li class="nav-item">
                   <a class="nav-link" href="INVENTAIRE/equipement.php">Mes Equipement </a>
                 </li>
+                <!--
                 <li class="nav-item">
                   <a class="nav-link" href="COMPTE/compte.php">Compte</a>
-                </li>
+                </li>-->
                 <!--<li class="nav-item">
                   <a class="nav-link" href="COMPTE/connexion.php">Connexion</a>
                 </li>-->
@@ -107,11 +108,11 @@
                       </h1>
                       <p>
                         Mon site web dédié à l’escalade offre des informations sur les techniques, des conseils pour améliorer les compétences, des récits d’expériences en montagne et des actualités sur les événements et les nouvelles voies d’escalade.                      </p>
-                      <div class="btn-box">
+                      <!--<div class="btn-box">
                         <a href="" class="btn-1">
                           Contact Us
                         </a>
-                      </div>
+                      </div>-->
                     </div>
                   </div>
                 </div>
@@ -131,14 +132,13 @@
                         </span>
                       </h1>
                       <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking
+                        
                       </p>
-                      <div class="btn-box">
+                      <!--<div class="btn-box">
                         <a href="" class="btn-1">
                           Contact Us
                         </a>
-                      </div>
+                      </div>-->
                     </div>
                   </div>
                 </div>
@@ -161,14 +161,14 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <!--<section class="about_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Qui sommes-nous?
+                Qui suis-je ?
               </h2>
             </div>
             <p>
@@ -186,11 +186,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
   <!-- end about section -->
-  <div class="body_bg layout_padding">
+  <!--<div class="body_bg layout_padding">
 
-    <!-- service section -->
+     service section 
 
     <section class="service_section ">
       <div class="container">
@@ -283,13 +283,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- end service section -->
 
     <!-- quote section -->
 
-    <section class="quote_section layout_padding">
+    <!--<section class="quote_section layout_padding">
       <div class="container">
         <div class="box">
           <div class="detail-box">
@@ -307,7 +307,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <!-- end quote section -->
 
@@ -320,7 +320,7 @@
 
     <!-- client section -->
 
-    <section class="client_section layout_padding-top">
+    <!--<section class="client_section layout_padding-top">
       <div class="d-flex justify-content-center">
         <div class="heading_container">
           <h2>
@@ -430,15 +430,15 @@
         </div>
 
       </div>
-    </section>
+    </section>-->
 
 
     <!-- end client section -->
 
-  </div>
+  </div>-->
   <!-- info section -->
 
-  <section class="info_section layout_padding">
+  <!--<section class="info_section layout_padding">
     <div class="footer_contact">
       <div class="heading_container">
         <h2>
@@ -462,18 +462,18 @@
     </div>
 
 
-  </section>
+  </section>-->
 
 
   <!-- end info section -->
 
   <!-- footer section -->
-  <section class="container-fluid footer_section">
+  <!---<section class="container-fluid footer_section">
     <p>
       Copyright &copy; 2019 All Rights Reserved By
       <a href="https://html.design/">Free Html Templates</a>
     </p>
-  </section>
+  </section>-->
   <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
