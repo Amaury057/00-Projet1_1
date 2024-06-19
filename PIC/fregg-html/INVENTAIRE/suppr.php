@@ -11,6 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id_equipement = $_POST["id"];
     $type_equipement = $_POST["type"];
 
+    if (!$id_equipement || !$type_equipement) {
+        echo "ID ou type d'équipement manquant.";
+        exit();
+    }
+
     if ($type_equipement == 'cordes') {
         $sql = "DELETE FROM cordes WHERE id = ? AND id_utilisateur = ?";
     } else {
@@ -25,6 +30,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Erreur lors de la suppression.";
     }
+
+    $stmt->close();
+    $connexion->close();
+    exit();
+} else {
+    echo "Requête invalide.";
     exit();
 }
 ?>

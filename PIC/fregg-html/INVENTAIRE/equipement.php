@@ -31,7 +31,7 @@
         <header class="header_section">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-                    <a class="navbar-brand mr-5" href="../index.html">
+                    <a class="navbar-brand mr-5" href="../index.php">
                         <!--<img src="images/logo.png" alt="">-->
                         <span>
                             Pic Passion

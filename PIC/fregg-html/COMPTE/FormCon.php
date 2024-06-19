@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["nom"] = $row["nom"];
         $_SESSION["id_utilisateur"] = $row["id_utilisateur"];
 
-        header('location: ../index.html');
+        header('location: ../index.php');
         exit;
     } else {
         // L'utilisateur n'existe pas ou les informations sont incorrectes

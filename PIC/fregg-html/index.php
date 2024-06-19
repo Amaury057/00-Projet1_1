@@ -14,18 +14,18 @@
 
   <title>Fregg</title>
 
-  <!-- slider stylesheet --
+  <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
 
-  <!-- font wesome stylesheet --
+  <!-- font wesome stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style --
+  <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -34,6 +34,9 @@
 </head>
 
 <body>
+  <?php
+  session_start();
+  ?>
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -64,6 +67,17 @@
                 <li class="nav-item">
                   <a class="nav-link" href="COMPTE/connexion.php">Connexion</a>
                 </li>
+                <?php
+                if (isset($_SESSION['id_utilisateur'])) {
+                  echo '<li class="nav-item">
+                          <a class="nav-link" href="COMPTE/deconnexion.php">Déconnexion</a>
+                        </li>';
+                } else {
+                  echo '<li class="nav-item">
+                          <a class="nav-link" href="COMPTE/connexion.php">Connexion</a>
+                        </li>';
+                }
+                ?>
               </ul>
             </div>
           </div>
